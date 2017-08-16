@@ -1,0 +1,145 @@
+*{
+  box-sizing: border-box;
+}
+body{
+font-family: 'Slabo 27px', serif;
+}
+.wrap{
+  margin: 7em 2em;
+}
+.flex-container {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-justify-content: center; /* Safari */
+  justify-content:         center;
+  -webkit-align-content: space-around; /* Safari */
+  align-content:         space-around;
+}
+
+.flex-item{
+  display: inline-block;
+}
+
+header{
+  background-color: teal;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  color: #fff;
+  position: fixed;
+  z-index: 3;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  align-items: center;
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content:         space-between;
+  margin: 0 5em;
+}
+
+.nav-menu{
+  margin: 1 em;
+  padding: 0;
+  list-style: none;
+
+}
+.nav-menu li{
+  display: inline-block;
+  margin: 0 .5em;
+  color: #fff;
+  background-color: #0e7375;
+  padding: .5em;
+  border-radius: 3px;
+}
+.nav-menu li:hover{
+  background-color: #0e4875;
+}
+.nav-menu li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+
+.crop-img{
+  width: 24em;
+  height: 24em;
+  margin: 1em;
+  background-repeat: no-repeat;
+  background-size: 70em;
+}
+.img1{
+  background-image: url('../images/rickandmorty.jpg');
+  background-position: 52% 31%;
+}
+.img2{
+  background-image: url('../images/ep2.jpg');
+  background-position: 81% 50%;
+}
+.img3{
+  background-image: url('../images/ep3.png');
+  background-position: 51% 2%;
+}
+.img4{
+  background-image: url('../images/potion-number-9.jpg');
+  background-position: 81% 50%;
+}
+.img5{
+  background-image: url('../images/Total_Rickall.png');
+  background-position: 81% 50%;
+}
+.overlay {
+  position: absolute;
+  width: 24em;
+  height:24em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.gallery-pic:hover .overlay {
+  opacity: .9;
+}
+
+.copyright{
+  margin: 5em auto 2em auto;
+  text-align: center;
+}
+.img-banner{
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+}
+.crop{
+  overflow: hidden;
+  max-height: 550px;
+}
+.flip {
+  -webkit-transform: rotate(180deg);
+  -moz-transform:    rotate(180deg);
+  -ms-transform:     rotate(180deg);
+  -o-transform:      rotate(180deg);
+  transform:         rotate(180deg);
+  /* needed? not sure */
+  zoom: 1;
+}
+.space{
+  margin: 15px 0;
+}
+.textarea{
+  height: 150px;
+}
+.links li{
+  color: #000;
+  margin: 1em;
+}
